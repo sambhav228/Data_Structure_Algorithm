@@ -1,0 +1,10 @@
+from statistics import median
+num = int(input())
+x1 = (list(map(int, input().split())))
+y1 = list(map(int, input().split()))
+Z1 = []
+for i in range(num):
+    for j in range(y1[i]):
+        Z1.append(x1[i])
+Z1.sort()
+print(float(median(Z1[(len(Z1)+1)//2:])) - float(median(Z1[:(len(Z1))//2])))
