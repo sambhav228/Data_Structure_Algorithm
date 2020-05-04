@@ -1,0 +1,8 @@
+from statistics import median
+n = int(input())
+num = sorted(map(int, input().split()))
+midpoint = n//2
+
+print(int(median(num[:midpoint])))
+print(int(median(num)))
+print(int(median(num[-midpoint:])))
