@@ -1,6 +1,0 @@
-# Enter your code here. Read input from STDIN. Print output to STDOUT
-import operator
-input()
-n = list(map(int,input().split()))
-w = list(map(int,input().split()))
-print("{0:.1f}".format(sum(map(operator.mul,n,w))/sum(w)))
