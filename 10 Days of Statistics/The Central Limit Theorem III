@@ -1,0 +1,8 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+mu=int(input())
+sd=int(input())
+P=float(input())
+z=float(input())
+print(round(mu-z*sd/pow(n,1/2),2))
+print(round(mu+z*sd/pow(n,1/2),2))
