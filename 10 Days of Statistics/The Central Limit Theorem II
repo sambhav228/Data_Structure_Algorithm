@@ -1,0 +1,10 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import math
+u=100 * 2.4
+s=2.0 * math.sqrt(100)
+x=250
+def norm(u,s,x):
+    p=0.5 * (1 + math.erf((x - u) / (s * (2 ** 0.5))))
+    return round(p,4)
+
+print(norm(u,s,x))
