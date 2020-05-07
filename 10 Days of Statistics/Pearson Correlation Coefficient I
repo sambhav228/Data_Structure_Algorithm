@@ -1,0 +1,13 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import statistics as s
+
+n = int(input())
+x = list(map(float, str.split(input())))
+y = list(map(float, str.split(input(), " ")))
+
+xmean, ymean= s.mean(x), s.mean(y)
+
+num = sum((x- xmean)*(y- ymean) for x, y in zip(x, y))
+denom = n*s.pstdev(x)*s.pstdev(y)
+
+print(round(num/denom, 3))
