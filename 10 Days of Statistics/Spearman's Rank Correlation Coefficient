@@ -1,0 +1,15 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+n=int(input())
+x = list(map(float,input().strip().split()))
+y = list(map(float,input().strip().split()))
+sum1=0
+count1=[0]*n
+count2=[0]*n
+i=0
+j=1
+for i in range(n):
+     for j in range(n):
+         if x[i]>x[j]:
+             count1[i]=count1[i]+1
+         if y[i]>y[j]:
+             count2[i]=count2[i]+1  
