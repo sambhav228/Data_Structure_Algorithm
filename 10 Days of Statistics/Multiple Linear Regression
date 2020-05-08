@@ -1,0 +1,21 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+import numpy as np
+
+nfeatures, nfeaturesets = map(int, input().split())
+X = list()
+Y = list()
+for _ in range(nfeaturesets):
+    *Xtemp, Ytemp = [1] + list(map(float, input().split()))
+    X.append((Xtemp))
+    Y.append(Ytemp)
+
+Xarr = np.array(X)
+Yarr = np.array(Y)
+
+B = np.matmul(np.matmul(np.linalg.inv(np.matmul(np.transpose(Xarr),Xarr)), np.transpose(Xarr)), Yarr)
+
+ntests = int(input())
+for _ in range(ntests):
+    sample = [1] + list(map(float, input().split()))
+    samplearr = np.array(sample)
+    print(np.matmul(samplearr,B))
