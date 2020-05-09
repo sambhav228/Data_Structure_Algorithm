@@ -1,0 +1,66 @@
+#include <stdio.h>
+#include <math.h>
+#include<stdlib.h>
+
+ int main() 
+
+ {
+
+    int result,fresult;
+
+    int i, j, a, b, c;
+
+    unsigned char *satkin;
+
+ printf("Enter a number up to which all primes are calculated:\n ");
+
+   scanf("%d", &result);
+
+ /*allocates the memory and also initializes the allocates memory block to zero*/
+
+satkin= (unsigned char *) calloc(result, sizeof(unsigned char));
+
+fresult= sqrt(result);
+
+ for (a=1;a<=fresult;a++) {
+
+for (b=1;b<=fresult;b++) {
+
+       c=4*a*a+b*b;
+
+ if (c<=result&& (c % 60 ==1||c%60==13||c%60==17||c%60==29||c%60==37||c %60==41||c%60==49|| c % 60 == 53)) {
+
+ satkin[c] = !satkin[c];
+
+ }
+   c =3*a*a+b*b;
+
+   if (c<= result&& (c % 60 ==7 ||c % 60 ==19|| c % 60==31 || c% 60==43)) {
+    satkin[c] = !satkin[c];
+   }
+      c=3* a* a -b*b;
+     if (a>b && c <= result&& (c % 60 == 11||c %60==23||c % 60== 47||c %60==59)) 
+{
+satkin[c] = !satkin[c];
+}
+}
+}
+for (i =5;i <= fresult; i++) {
+ if (satkin[i]==1) {
+ for (j=1;j * i * i <= result; j++) {
+ satkin[j * i * i] = 0;
+   }
+    }
+    }
+ printf("The following primes have been calculated:\n");
+ for (i = 5; i <= result; i++) {
+
+ if (satkin[i]==1) {
+
+ printf("\n%d", i);
+
+ }
+}
+scanf("%d", &i);
+return 0;
+}
