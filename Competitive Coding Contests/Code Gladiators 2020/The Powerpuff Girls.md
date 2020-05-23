@@ -9,6 +9,8 @@ There are N ingredients required in a certain quantity to create a Powerpuff Gir
 
 The villains, on the other hand, want to destroy the laboratory and stop Professor Utonium from creating more Powerpuff girls. Mojo Jojo is coming prepared with ammunition and Him is leading other villains like Princess, Amoeba Boys, Sedusa, Gangreen Gang etc.
 
+![screenshot_1](https://lh3.googleusercontent.com/kiUzCLx4UicFK7yqbhJY8F0Go86ocx_Sk_UAYgYBfK_Y6SYoAHG3rJwl8rjlz58QklbgwrnFLXk5HnkC1hB4sNX1dr1YHsnYjPOCAfEq8SNBwrwGZBqE3vlrWCjpIkqGHNXwqDE)
+
 Professor does not have much time as villains will reach the laboratory soon. He is starting the process but does not know the number of Powerpuff Girls which will be created. He needs your help in determining the maximum number of Powerpuff Girls which will be created with the current quantity of ingredients. 
 
 
