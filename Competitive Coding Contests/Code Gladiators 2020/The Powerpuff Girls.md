@@ -18,6 +18,7 @@ Professor does not have much time as villains will reach the laboratory soon. He
 Example:
 
 Professor Utonium requires 3 ingredients to make Powerpuff Girls. The 3 ingredients are present in the laboratory in the given quantity:
+![screenshot_2](https://lh3.googleusercontent.com/kyy8eu0IKngI7xdxoUJPSejdNaY-5nczNM8Akf-YEyHHvR6Uk0_6iJQks4NBhHLblgjJbnOGpVCDqICCn8-mjlMA_OvP7WXGDdVQcWYqd_ESXNUrwlP609AxStCLcMYDr4ry6OA)
 
 To make a Powerpuff Girl, Professor Utonium requires:
 
@@ -30,6 +31,8 @@ To make a Powerpuff Girl, Professor Utonium requires:
 
 
 The maximum number of Powerpuff Girls which can be created are 3 as after 3, Professor will run out of Ingredient C.
+
+![screenshot_2](https://lh3.googleusercontent.com/AZ3CL4F9-JNT3z4BxVNr_MSeF962ZMgGVZZ4_jrco2xaZnpswEzDa7f6KZQ4CoLaKeq70ccTYbyKGzsGIeWSl_CU1_7D7gR9viVPs3_fVocYuXKUgLtIPcsoqwLjy1blPherA1o)
 
 Can you determine the maximum number?
 
