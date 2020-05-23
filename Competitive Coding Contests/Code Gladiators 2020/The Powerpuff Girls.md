@@ -18,6 +18,7 @@ Professor does not have much time as villains will reach the laboratory soon. He
 Example:
 
 Professor Utonium requires 3 ingredients to make Powerpuff Girls. The 3 ingredients are present in the laboratory in the given quantity:
+
 ![screenshot_2](https://lh3.googleusercontent.com/kyy8eu0IKngI7xdxoUJPSejdNaY-5nczNM8Akf-YEyHHvR6Uk0_6iJQks4NBhHLblgjJbnOGpVCDqICCn8-mjlMA_OvP7WXGDdVQcWYqd_ESXNUrwlP609AxStCLcMYDr4ry6OA)
 
 To make a Powerpuff Girl, Professor Utonium requires:
