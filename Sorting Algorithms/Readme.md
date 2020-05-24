@@ -55,3 +55,11 @@ N, the number of elements in the array. Then choose ht-1 for a starting value. F
 150 items, ht = 109 (3·109 >= 150), so the first spacing is ht-1, or 41. The second spacing is 19,
 then 5, and finally 1. 
 
+## Quicksort
+
+Although the shell sort algorithm is significantly better than insertion sort, there is still room for
+improvement. One of the most popular sorting algorithms is quicksort. Quicksort executes in
+O(n lg n) on average, and O(n2) in the worst-case. However, with proper precautions, worst-case
+behavior is very unlikely. Quicksort is a non-stable sort. It is not an in-place sort as stack space is
+required. 
+
