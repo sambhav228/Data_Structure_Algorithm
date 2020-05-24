@@ -14,3 +14,5 @@ Starting near the top of the array in Figure 2-1(a), we extract the 3. Then the 
 shifted down until we find the correct place to insert the 3. This process repeats in Figure 2-1(b)
 with the next number. Finally, in Figure 2-1(c), we complete the sort by inserting 2 in the correct
 place. 
+
+![screenshot_1]()
