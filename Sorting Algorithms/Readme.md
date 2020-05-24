@@ -69,4 +69,6 @@ partition. In Partition (Figure 2-3), one of the array elements is selected as a
 smaller than the pivot value are placed to the left of the pivot, while larger values are placed to the
 right.
 
-![screenshot_3]()
+![screenshot_3](https://github.com/sambhav228/Data_Structure_Algorithm/blob/master/Sorting%20Algorithms/quick1.jpg)
+
+
