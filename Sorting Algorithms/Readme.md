@@ -79,4 +79,18 @@ until all elements to the left of the pivot <= the pivot, and all elements to th
 the pivot. QuickSort recursively sorts the two subarrays, resulting in the array shown in Figure 2-
 4(c). 
 
-![screenshot_4]()
+![screenshot_4](https://github.com/sambhav228/Data_Structure_Algorithm/blob/master/Sorting%20Algorithms/quick2.jpg)
+
+As the process proceeds, it may be necessary to move the pivot so that correct ordering is
+maintained. In this manner, QuickSort succeeds in sorting the array. If we’re lucky the pivot selected
+will be the median of all values, equally dividing the array. For a moment, let’s assume that this is
+the case. Since the array is split in half at each step, and Partition must eventually examine all n
+elements, the run time is O(n lg n).
+To find a pivot value, Partition could simply select the first element (A[Lb]). All other values would
+be compared to the pivot value, and placed either to the left or right of the pivot as appropriate.
+However, there is one case that fails miserably. Suppose the array was originally in order. Partition
+would always select the lowest value as a pivot and split the array with one element in the left
+partition, and Ub - Lb elements in the other. Each recursive call to quicksort would only diminish
+the size of the array to be sorted by one. Therefore n recursive calls would be required to do the
+sort, resulting in a O(n2) run time. One solution to this problem is to randomly select an item as a
+pivot. This would make it extremely unlikely that worst-case behavior would occur. 
