@@ -63,3 +63,10 @@ O(n lg n) on average, and O(n2) in the worst-case. However, with proper precauti
 behavior is very unlikely. Quicksort is a non-stable sort. It is not an in-place sort as stack space is
 required. 
 
+### Theory
+The quicksort algorithm works by partitioning the array to be sorted, then recursively sorting each
+partition. In Partition (Figure 2-3), one of the array elements is selected as a pivot value. Values
+smaller than the pivot value are placed to the left of the pivot, while larger values are placed to the
+right.
+
+![screenshot_3]()
