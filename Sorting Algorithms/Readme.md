@@ -22,3 +22,9 @@ we may need to examine and shift up to n - 1 other entries, resulting in a O(n2)
 insertion sort is an in-place sort. That is, we sort the array in-place. No extra memory is required.
 The insertion sort is also a stable sort. Stable sorts retain the original ordering of keys when identical
 keys are present in the input data. 
+
+## Shell Sort
+
+Shell sort, developed by Donald L. Shell, is a non-stable in-place sort. Shell sort improves on the
+efficiency of insertion sort by quickly shifting values to their destination. Average sort time is O(n7/6),
+while worst-case time is O(n4/3). 
