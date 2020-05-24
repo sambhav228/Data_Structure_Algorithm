@@ -71,4 +71,12 @@ right.
 
 ![screenshot_3](https://github.com/sambhav228/Data_Structure_Algorithm/blob/master/Sorting%20Algorithms/quick1.jpg)
 
+In Figure 2-4(a), the pivot selected is 3. Indices are run starting at both ends of the array. One index
+starts on the left and selects an element that is larger than the pivot, while another index starts on
+the right and selects an element that is smaller than the pivot. In this case, numbers 4 and 1 are
+selected. These elements are then exchanged, as is shown in Figure 2-4(b). This process repeats
+until all elements to the left of the pivot <= the pivot, and all elements to the right of the pivot are >=
+the pivot. QuickSort recursively sorts the two subarrays, resulting in the array shown in Figure 2-
+4(c). 
 
+![screenshot_4]()
