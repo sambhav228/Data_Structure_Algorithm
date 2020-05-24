@@ -15,4 +15,4 @@ shifted down until we find the correct place to insert the 3. This process repea
 with the next number. Finally, in Figure 2-1(c), we complete the sort by inserting 2 in the correct
 place. 
 
-![screenshot_1]()
+![screenshot_1](https://github.com/sambhav228/Data_Structure_Algorithm/blob/master/Sorting%20Algorithms/insert1.jpg)
