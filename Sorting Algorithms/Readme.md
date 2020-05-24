@@ -43,3 +43,15 @@ larger than one, we were able to quickly shift values to their proper destinatio
 
 ![screenshot_2](https://github.com/sambhav228/Data_Structure_Algorithm/blob/master/Sorting%20Algorithms/shell1.jpg)
 
+Various spacings may be used to implement a shell sort. Typically the array is sorted with a large
+spacing, the spacing reduced, and the array sorted again. On the final sort, spacing is one. Although
+the shell sort is easy to comprehend, formal analysis is difficult. In particular, optimal spacing values
+elude theoreticians. Knuth recommends a technique, due to Sedgewick, that determines spacing
+h based on the following formulas:
+hs = 9·2s - 9·2s/2 + 1 if s is even
+hs = 8·2s - 6·2(s+1)/2 + 1 if s is odd
+These calculations result in values (h0,h1,h2,…) = (1,5,19,41,109,209,…). Calculate h until 3ht >=
+N, the number of elements in the array. Then choose ht-1 for a starting value. For example, to sort
+150 items, ht = 109 (3·109 >= 150), so the first spacing is ht-1, or 41. The second spacing is 19,
+then 5, and finally 1. 
+
