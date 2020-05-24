@@ -16,3 +16,9 @@ with the next number. Finally, in Figure 2-1(c), we complete the sort by inserti
 place. 
 
 ![screenshot_1](https://github.com/sambhav228/Data_Structure_Algorithm/blob/master/Sorting%20Algorithms/insert1.jpg)
+
+Assuming there are n elements in the array, we must index through n - 1 entries. For each entry,
+we may need to examine and shift up to n - 1 other entries, resulting in a O(n2) algorithm. The
+insertion sort is an in-place sort. That is, we sort the array in-place. No extra memory is required.
+The insertion sort is also a stable sort. Stable sorts retain the original ordering of keys when identical
+keys are present in the input data. 
