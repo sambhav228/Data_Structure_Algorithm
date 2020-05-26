@@ -1,3 +1,5 @@
+//https://www.hackerrank.com/challenges/staircase/problem
+
 #include<stdio.h>
 int main()
 { int i,j,k,n;
