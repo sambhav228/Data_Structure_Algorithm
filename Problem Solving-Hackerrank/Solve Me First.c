@@ -1,3 +1,5 @@
+//https://www.hackerrank.com/challenges/solve-me-first/problem
+
 #include <stdio.h>
 #include <string.h>
 #include <math.h>
