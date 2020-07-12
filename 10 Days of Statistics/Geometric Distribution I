@@ -1,3 +1,4 @@
+#@sambhav228
 def geometric(p, n, x):
     return p**x * (1-p)**(n-x) 
 
