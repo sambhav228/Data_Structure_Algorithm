@@ -1,4 +1,4 @@
-//@sambhav228
+#@sambhav228
 frac=input().split(' ')
 n=int(input())
 p=int(frac[0])/int(frac[1])
