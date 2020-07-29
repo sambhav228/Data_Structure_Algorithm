@@ -1,6 +1,3 @@
-//POSTlab 2---lab 1
-//KLU_180031058_SAMBHAV KUMAR THAKUR
-
 #include <bits/stdc++.h> 
 using namespace std; 
 
