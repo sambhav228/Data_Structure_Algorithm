@@ -1,6 +1,3 @@
-#POSTlab 1---lab 1
-#KLU_180031058_SAMBHAV KUMAR THAKUR
-
 def isVowel(ch) : 
 	
 	ch = ch.upper(); 
