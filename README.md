@@ -30,7 +30,7 @@ Hackerearth:
       
 Hackerrank:
 
-      https://www.hackerrank.com/sambhav228
+      https://www.hackerrank.com/KLU_180031058
       
  GeeksForGeeks:
  
