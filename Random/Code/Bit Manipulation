@@ -1,0 +1,76 @@
+1. USING BITSET (DECIMAL TO BIN )CPP
+
+#include<iostream>
+#include<bitset>
+int main(){
+std::cout<<"Enter a decimal number\n";
+int num{};
+std::cin>>num;
+std::bitset<8>binary(num);
+std::cout<<binary;
+}
+>117
+>Enter a decimal number
+>01110101
+
+
+2. Without using bitset
+
+#include<iostream>
+int main(){
+int num{},i{};
+int bin[8];
+std::cout<<"Enter decimal number ";
+std::cin>>num;
+std::cout<<num<<'\n';
+for(i =0;num>0;i++){
+bin[i] = num%2;
+num/=2;
+}
+for(i=i-1;i>=0;i--){
+std::cout<<bin[i];
+}
+}
+
+## Binary to Decimal conversion using Integer.parseInt() method
+
+import java.util.Scanner;
+class BinaryToDecimal {
+    public static void main(String args[]){
+       Scanner input = new Scanner( System.in );
+       System.out.print("Enter a binary number: ");
+       String binaryString =input.nextLine();
+       System.out.println("Output: "+Integer.parseInt(binaryString,2));
+    }
+}
+
+
+## Conversion without using parseInt
+
+public class Details {
+ 
+  public int BinaryToDecimal(int binaryNumber){
+ 
+    int decimal = 0;
+    int p = 0;
+    while(true){
+      if(binaryNumber == 0){
+        break;
+      } else {
+          int temp = binaryNumber%10;
+          decimal += temp*Math.pow(2, p);
+          binaryNumber = binaryNumber/10;
+          p++;
+       }
+    }
+    return decimal;
+  }
+ 
+  public static void main(String args[]){
+    Details obj = new Details();
+    System.out.println("110 --> "+obj.BinaryToDecimal(110));
+    System.out.println("1101 --> "+obj.BinaryToDecimal(1101));
+    System.out.println("100 --> "+obj.BinaryToDecimal(100));
+    System.out.println("110111 --> "+obj.BinaryToDecimal(110111));
+  }
+}
