@@ -1,1 +1,14 @@
 
+## Dangling pointers
+
+C++ does not make any guarantees about what will happen to the contents of deallocated memory, or to the value of the pointer being deleted. 
+In most cases, the memory returned to the operating system will contain the same values it had before it was returned, 
+and the pointer will be left pointing to the now deallocated memory.
+A pointer that is pointing to deallocated memory is called a dangling pointer. Dereferencing or deleting a dangling pointer will lead to undefined behavior. 
+
+
+## Null pointers and dynamic memory allocation
+
+Null pointers (pointers set to address 0 or nullptr) are particularly useful when dealing with dynamic memory allocation. 
+In the context of dynamic memory allocation, a null pointer basically says “no memory has been allocated to this pointer”. 
+This allows us to do things like conditionally allocate memory
