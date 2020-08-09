@@ -1,0 +1,55 @@
+The memory that a program uses is typically divided into a few different areas, called segments:
+
+The code segment (also called a text segment), where the compiled program sits in memory. The code segment is typically read-only.
+The bss segment (also called the uninitialized data segment), where zero-initialized global and static variables are stored.
+The data segment (also called the initialized data segment), where initialized global and static variables are stored.
+The heap, where dynamically allocated variables are allocated from.
+The call stack, where function parameters, local variables, and other function-related information are stored.
+
+## The heap segment
+
+The heap segment (also known as the “free store”) keeps track of memory used for dynamic memory allocation.
+
+when we use the new operator to allocate memory, this memory is allocated in the application’s heap segment.
+
+The address of this memory is passed back by operator new, and can then be stored in a pointer. You do not have to worry about the mechanics behind the process
+of how free memory is located and allocated to the user. However, it is worth knowing that sequential memory requests may not result in sequential memory addresses
+being allocated!
+
+The heap has advantages and disadvantages:
+
+Allocating memory on the heap is comparatively slow.
+Allocated memory stays allocated until it is specifically deallocated (beware memory leaks) or the application ends (at which point the OS should clean it up).
+Dynamically allocated memory must be accessed through a pointer. Dereferencing a pointer is slower than accessing a variable directly.
+Because the heap is a big pool of memory, large arrays, structures, or classes can be allocated here.
+
+## The call stack
+
+The call stack (usually referred to as “the stack”) has a much more interesting role to play. The call stack keeps track of all the active 
+functions (those that have been called but have not yet terminated) from the start of the program to the current point of execution, and handles allocation of all 
+function parameters and local variables.
+The call stack is implemented as a stack data structure. So before we can talk about how the call stack works, we need to understand what a stack data structure is.
+
+
+## The stack data structure
+
+A data structure is a programming mechanism for organizing data so that it can be used efficiently. You’ve already seen several types of data structures, 
+such as arrays and structs. Both of these data structures provide mechanisms for storing data and accessing that data in an efficient way. 
+There are many additional data structures that are commonly used in programming, quite a few of which are implemented in the standard library, and a stack is one of those.
+
+Consider a stack of plates in a cafeteria. Because each plate is heavy and they are stacked, you can really only do one of three things:
+1) Look at the surface of the top plate
+2) Take the top plate off the stack (exposing the one underneath, if it exists)
+3) Put a new plate on top of the stack (hiding the one underneath, if it exists)
+
+In computer programming, a stack is a container data structure that holds multiple variables (much like an array). However, whereas an array lets you access and modify 
+elements in any order you wish (called random access), a stack is more limited. The operations that can be performed on a stack correspond to the three things mentioned above:
+
+1) Look at the top item on the stack (usually done via a function called top(), but sometimes called peek())
+2) Take the top item off of the stack (done via a function called pop())
+3) Put a new item on top of the stack (done via a function called push())
+
+A stack is a last-in, first-out (LIFO) structure. The last item pushed onto the stack will be the first item popped off. 
+If you put a new plate on top of the stack, the first plate removed from the stack will be the plate you just pushed on last. 
+Last on, first off. As items are pushed onto a stack, the stack grows larger -- as items are popped off, the stack grows smaller.
+
