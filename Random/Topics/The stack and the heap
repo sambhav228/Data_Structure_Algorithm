@@ -6,6 +6,8 @@ The data segment (also called the initialized data segment), where initialized g
 The heap, where dynamically allocated variables are allocated from.
 The call stack, where function parameters, local variables, and other function-related information are stored.
 
+
+
 ## The heap segment
 
 The heap segment (also known as the “free store”) keeps track of memory used for dynamic memory allocation.
@@ -23,12 +25,15 @@ Allocated memory stays allocated until it is specifically deallocated (beware me
 Dynamically allocated memory must be accessed through a pointer. Dereferencing a pointer is slower than accessing a variable directly.
 Because the heap is a big pool of memory, large arrays, structures, or classes can be allocated here.
 
+
+
 ## The call stack
 
 The call stack (usually referred to as “the stack”) has a much more interesting role to play. The call stack keeps track of all the active 
 functions (those that have been called but have not yet terminated) from the start of the program to the current point of execution, and handles allocation of all 
 function parameters and local variables.
 The call stack is implemented as a stack data structure. So before we can talk about how the call stack works, we need to understand what a stack data structure is.
+
 
 
 ## The stack data structure
