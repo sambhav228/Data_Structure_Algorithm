@@ -1,0 +1,27 @@
+#include <bits/stdc++.h>
+using namespace std;
+void quadraticRoots(int a,int b, int c)
+{
+  double d =sqrt(b*b-4*a*c);
+  if(d>=0){
+   int a1=floor((-b+d)/(2*a));
+   int a2=floor((-b-d)/(2*a));
+  if((a1)<(a2))
+  cout<<a2<<" "<<a1;
+  else
+  cout<<a1<<" "<<a2;
+  }
+  else cout<<"Imaginary";
+}
+int main() {
+	int T; 
+	cin>>T; 
+	while(T--)
+	{
+	    int a, b, c; 
+	    cin>>a>>b>>c; 
+	    quadraticRoots(a,b,c);
+	    cout<<endl;
+	}
+	return 0;
+}
