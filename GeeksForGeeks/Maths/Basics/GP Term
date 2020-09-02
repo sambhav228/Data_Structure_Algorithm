@@ -6,7 +6,7 @@ double termOfGP(int A,int B,int N)
     double b=double(B);
     double r=(b/a);
     
-    return r;
+    return a*pow(r,N-1);
     
 }
 
