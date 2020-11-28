@@ -17,7 +17,7 @@ The platform where I mostly active to solve all these Challenges are:
     *HACKERRANK
     *LEETCODE
     *GeeksForGeeks
-    *TECHGIG
+    
  
 In all these platform you can checkout me with my common username for all platform : sambhav228
 
