@@ -37,7 +37,4 @@ Hackerrank:
  
       https://auth.geeksforgeeks.org/user/sambhav228/profile
       
- TECHGIG:
- 
-      https://www.techgig.com/sambhav228
     
