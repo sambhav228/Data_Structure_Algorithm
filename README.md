@@ -7,7 +7,6 @@ The languages which I used to complete these tasks are:
     2.C
     3.Python
     4.Java
-    5.JavaScript
 
 
 The platform where I mostly active to solve all these Challenges are:
