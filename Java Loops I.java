@@ -12,6 +12,6 @@ public class Solution {
         System.out.println(+N+" x " +i+ " = " +a);
 
         }
-        scanner.close();
+        
     }
 }
