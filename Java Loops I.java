@@ -3,7 +3,7 @@ public class Solution {
         Scanner scanner = new Scanner(System.in);    
         int N = scanner.nextInt();
         for(int i=1;i<=10;i++)
-        {
+        
             
         
 
