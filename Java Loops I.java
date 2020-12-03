@@ -5,7 +5,7 @@ public class Solution {
         for(int i=1;i<=10;i++)
         {
             int a=N*i;
-        System.out.println(+N+" x " +i+ " = " +a);
+        
 
         }
         
