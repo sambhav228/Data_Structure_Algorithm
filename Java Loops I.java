@@ -1,1 +1,1 @@
-public class Solut
+public class 
