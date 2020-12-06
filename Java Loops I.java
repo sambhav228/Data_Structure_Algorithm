@@ -1,1 +1,1 @@
-publi
+pub
